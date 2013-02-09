@@ -6,7 +6,8 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    =image_tag(%{http://placehold.it/350x250})
+    #header
+      =image_tag 'skyline_pic_cropped.jpg'
     =link_to "Home", root_path
     =link_to "Music", music_path
     =link_to "Shows", shows_path
