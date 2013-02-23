@@ -2,22 +2,24 @@
 %html
   %head
     %title AgentMooney.com
-    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Oxygen'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Oxygen:400,300,700'
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
     = favicon_link_tag 'favicon.ico'
   %body
     %header
-    .container
-      =link_to((image_tag "logo_burgundy_transparent.gif", :class => 'logo'), root_path, :class => 'img-link')
-      %nav
-        %ul
-          %li=link_to "Home", root_path
-          %li=link_to "Music", music_path
-          %li=link_to "Shows", shows_path
-          %li=link_to "News", news_path
-          %li=link_to "FAQ", faq_path
-          %li=link_to "Contact", contact_path
-
-      = yield
+      .container
+        .social-links
+          =link_to((image_tag "twitter.png", :class => 'social-img'), '#', :class => 'img-link')
+          =link_to((image_tag "facebook.png", :class => 'social-img'), '#', :class => 'img-link')
+        =link_to((image_tag "logo_burgundy_transparent.gif", :class => 'logo'), root_path, :class => 'img-link')
+        %nav
+          %ul
+            %li=link_to "Home", root_path
+            %li=link_to "Music", music_path
+            %li=link_to "Shows", shows_path
+            %li=link_to "News", news_path
+            %li=link_to "FAQ", faq_path
+            %li=link_to "Contact", contact_path
+        = yield
