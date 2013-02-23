@@ -18,7 +18,8 @@ $skyblue: #1874cd
 $border: solid 1px $skyblue
 
 body
-  background: url('background_trees.jpg') 50%
+  /* background: url('background_trees.jpg') 50% */
+  background-color: #3b1311
 
 .container
   background: rgba(255, 255, 255, .8)  /* rgba(0, 148, 219, .3) */
@@ -45,32 +46,33 @@ body
   background: #fff
   margin: 0 auto
   padding: 20px
-  width: 80%
+  width: 90%
 
 .logo
-  display: block
-  margin: 0 auto
-  width: 250px
+  width: 200px
 
 a.img-link:hover
   background: none
 
+.home-img, .main-album-img
+  margin: 0
+  width: 100%
+
 .home-img
   float: left
   margin: 0 20px 0 0
-  width: 100%
 
 .img-div
   width: 40%
 
 nav
   background: #680000
-  margin: 30px auto
+  margin: 30px auto 0 auto
   width: 100%
 
 ul
+  float: right
   height: 25px
-  margin: 0 auto
   width: 100%
 
 @media all and(min-width: 600px)
