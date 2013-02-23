@@ -6,6 +6,6 @@ class ContactMailer < ActionMailer::Base
     @last = visitor[:last]
     @phone = visitor[:phone]
     @message = visitor[:message]
-    mail( to: 'rudyonrails@gmail.com', from: 'website@agentmooney.com', subject: 'New AgentMooney.com Email...')
+    mail( to: 'rudyonrails@gmail.com', from: '"AgentMooney.com" <website@agentmooney.com>', subject: 'New AgentMooney.com Email...')
   end
 end
