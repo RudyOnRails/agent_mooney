@@ -8,8 +8,8 @@
     = csrf_meta_tags
   %body
     %header
-      .trees=image_tag('background_trees_with_logo.jpg')
-    
+    .container
+      =image_tag "agent_Mooney_logo-tan.jpg", :class => 'logo'
       %nav
         %ul
           %li=link_to "Home", root_path
@@ -18,4 +18,5 @@
           %li=link_to "News", news_path
           %li=link_to "FAQ", faq_path
           %li=link_to "Contact", contact_path
-    = yield
+
+      = yield

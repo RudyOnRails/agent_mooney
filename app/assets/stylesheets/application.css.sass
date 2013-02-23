@@ -13,34 +13,68 @@
  *= require_tree .
  */
 
-body
-  background: url('kindajean.png')
-  
+$white: #fff
+$skyblue: #1874cd
+$border: solid 1px $skyblue
 
-header img
-  height: 100%
-  width: 100%
-  position: relative
-  opacity: 0.4 
+body
+  background: url('background_trees.jpg') 50%
+
+.container
+  background: $white
+  margin: 50px auto
+  padding: 30px 10px
+  width: 80%
+
+.logo
+  display: block
+  margin: 0 auto
+  width: 250px
 
 nav
-  float: right
-  position: absolute
-  top: 15px
-  right: 25px
-  border: 3px solid brown
+  background: $skyblue
+  height: 50px
+  margin: 30px auto
+  width: 100%
 
-li  
+ul
+  height: 25px
+  margin: 0 auto
+  width: 50%
+
+nav:before, nav:after, ul:before, ul:after
+  content: ""
+  display: table
+
+nav:after, ul:after
+  clear: both
+
+li
+  background: $skyblue
   float: left
-  padding: 15px
-  font-size: 20px
-  background-color: #FF6400
+  font-size: 1em
+  height: 30px
+  list-style: none
+  margin: 0
+  padding: 10px 5px
 
-a
+a:link, a:visited, a:active
+  color: $white
+  font: 1em "Helvetica", sans-serif
+  padding: 10px
   text-decoration: none
-  color: #1874CD
-  font-family: Oxygen, Arial, 'Times New Roman'
+  text-transform: uppercase
 
 a:hover
-  color: orange
+  background: orange
+  color: $skyblue
+  padding: 10px
 
+h1, p
+  color: #333
+
+h1
+  font: bold 1.5em "Helvetica", sans-serif
+
+p
+  font: 1em "Helvetica", sans-serif
