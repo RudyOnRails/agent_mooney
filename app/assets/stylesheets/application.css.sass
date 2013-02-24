@@ -15,7 +15,17 @@
 
 $white: #fff
 $skyblue: #1874cd
+$burgundy: #680000
 $border: solid 1px $skyblue
+$oxygen500: 500 1em "Oxygen", sans-serif
+$oxygen700: 700 1.25em "Oxygen", sans-serif
+$center: 0 auto
+
+@mixin container-border
+  border-bottom: solid 20px $burgundy
+  border-left: solid 1px $burgundy
+  border-right: solid 1px $burgundy
+  border-top: solid 20px $burgundy
 
 body
   /* background: url('background_trees.jpg') 50% */
@@ -23,18 +33,15 @@ body
 
 .container
   background: rgba(255, 255, 255, .8)  /* rgba(0, 148, 219, .3) */
-  border-bottom: solid 20px #680000
-  border-left: solid 1px #680000
-  border-right: solid 1px #680000
-  border-top: solid 20px #680000
+  @include container-border
   margin: 50px auto
   padding: 30px 0
   width: 80%
 
 .social-links
-  background: #680000
+  background: $burgundy
   border-radius: 0 0 5px 5px
-  color: white
+  color: $white
   float: right
   margin: -30px 20px
   padding: 5px
@@ -43,21 +50,22 @@ body
   width: 25px
 
 .container2
-  background: #fff
-  margin: 0 auto
+  background: $white
+  margin: $center
   padding: 20px
   width: 90%
 
 .logo
   width: 200px
 
-.contact-info
-  float: left
+.contact-info, .contact-form
   width: 50%
+
+.contact-info, .home-img
+  float: left
 
 .contact-form
   float: right
-  width: 50%
 
 .input-field, .message-field, .name-field
   height: 30px
@@ -80,21 +88,21 @@ a.img-link:hover
   width: 100%
 
 .home-img
-  float: left
   margin: 0 20px 0 0
 
 .img-div
   width: 40%
 
-nav
-  background: #680000
-  margin: 30px auto 0 auto
+nav, ul
   width: 100%
+
+nav
+  background: $burgundy
+  margin: 30px auto 0 auto
 
 ul
   float: right
   height: 25px
-  width: 100%
 
 @media all and(min-width: 600px)
   ul
@@ -108,31 +116,29 @@ nav:after, ul:after, .container2:after
   clear: both
 
 li
-  background: #680000
+  background: $burgundy
   float: left
   font-size: 1em
   list-style: none
   margin: 0
   padding: 5px
-
-a:link, a:visited, a:active
-  color: $white
-  font: 500 1em "Oxygen", sans-serif
-  padding: 5px 10px
-  text-decoration: none
-  text-transform: uppercase
-
-a:hover
-  background: #f26919
-  color: black
-  padding: 5px 10px
+  a
+    color: $white
+    font: $oxygen500
+    padding: 5px 10px
+    text-decoration: none
+    text-transform: uppercase
+    &:hover
+      background: #f26919
+      color: black
+      padding: 5px 10px
 
 h1, p
   color: #333
 
 h1
-  font: 700 1.25em "Oxygen", sans-serif
+  font: $oxygen700
 
 p
-  font: 500 1em "Oxygen", sans-serif
+  font: $oxygen500
   line-height: 1.5em
