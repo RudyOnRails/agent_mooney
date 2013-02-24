@@ -16,6 +16,7 @@
 $white: #fff
 $skyblue: #1874cd
 $burgundy: #680000
+$gray: #333
 $border: solid 1px $skyblue
 $oxygen500: 500 1em "Oxygen", sans-serif
 $oxygen700: 700 1.25em "Oxygen", sans-serif
@@ -59,13 +60,15 @@ body
   width: 200px
 
 .contact-info, .contact-form
-  width: 50%
+  width: 48%
 
 .contact-info, .home-img
   float: left
 
 .contact-form
+  background: $gray
   float: right
+  padding: 2%
 
 .input-field, .message-field, .name-field
   height: 30px
@@ -134,7 +137,7 @@ li
       padding: 5px 10px
 
 h1, p
-  color: #333
+  color: $gray
 
 h1
   font: $oxygen700
