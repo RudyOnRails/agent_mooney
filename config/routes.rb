@@ -1,6 +1,8 @@
 AgentMooney::Application.routes.draw do
   root :to => "pages#home"
 
+  get "send_email" => 'pages#send_email'
+
   get "music" => 'pages#music', :as => :music
   get "shows" => 'pages#shows', :as => :shows
   get "news" => 'pages#news', :as => :news

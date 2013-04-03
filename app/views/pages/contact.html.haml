@@ -1,3 +1,22 @@
-.container
-  %h1 Pages#contact
-  %p Find me in app/views/pages/contact.html.haml
+.container2
+  %div.contact-info
+    %h1 Contact Me
+    %p
+      Kevin Mooney
+    %p
+      Phone: 847-394-3592
+    %p
+      Email: k_mooney@hotmail.com
+  %div.contact-form
+    = form_tag('send_email', method: 'get') do
+      = email_field_tag :email, nil, placeholder: "your email", :class => 'input-field'
+      %br
+      = text_field_tag :first, nil, placeholder: "your first name", :class => 'name-field'
+      = text_field_tag :last, nil, placeholder: "your last name", :class => 'name-field'
+      %br
+      = phone_field_tag :phone, nil, placeholder: "your phone number", :class => 'input-field'
+      %br
+      = text_field_tag :message, nil, placeholder: "your message", :class => 'message-field'
+      %p
+        = submit_tag('Submit', :class => "btn btn-success")
+
