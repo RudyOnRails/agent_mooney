@@ -1,0 +1,51 @@
+$white: #fff
+$skyblue: #1874cd
+$black: #000
+$burgundy: #680000
+$gray: #333
+$border: solid 1px $skyblue
+$oxygen500: 500 1em "Oxygen", sans-serif
+$oxygen700: 700 1.25em "Oxygen", sans-serif
+$sanchez: "Sanchez", sans-serif
+$center: 0 auto
+$border: solid 5px $black
+
+body
+  background: url('background_bridge_grayscale.png') no-repeat
+  background-size: cover
+
+.container
+  background: rgba(104, 0, 0, .8)
+  border-radius: 8px
+  margin: $center
+  width: 1280px
+
+.container:before, .container:after
+  content: ""
+  display: table
+
+.container:after
+  clear: both
+
+table
+  margin: 0 auto
+  width: 1024px
+
+table td
+  display: table-cell
+  vertical-align: middle
+
+td
+  width: 25%
+
+.transparent-brown
+  background: rgba(53, 27, 0, .8)
+
+.transparent-burgundy
+  background: rgba(104, 0, 0, .8)
+
+.transparent-teal
+  background: rgba(0, 104, 104, .8)
+
+.transparent-blue
+  background: rgba(0, 52, 104, .8)

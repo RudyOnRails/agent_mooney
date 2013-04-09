@@ -11,16 +11,5 @@
   %body
     %header
       .container
-        .social-links
-          =link_to((image_tag "twitter.png", :class => 'social-img'), '#', :class => 'img-link')
-          =link_to((image_tag "facebook.png", :class => 'social-img'), '#', :class => 'img-link')
-        =link_to((image_tag "logo_burgundy_transparent.gif", :class => 'logo'), root_path, :class => 'img-link')
-        %nav
-          %ul
-            %li=link_to "Home", root_path
-            %li=link_to "Music", music_path
-            %li=link_to "Shows", shows_path
-            %li=link_to "News", news_path
-            %li=link_to "FAQ", faq_path
-            %li=link_to "Contact", contact_path
+
         = yield

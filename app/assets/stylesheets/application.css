@@ -9,7 +9,9 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require reset
- *= require styles
+ *= require navigation
+ *= require layout
+ *= require typography
  *= require_self
  *
  */
