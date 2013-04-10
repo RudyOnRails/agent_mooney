@@ -1,21 +1,20 @@
-%section
-  %h1 agent mooney is music
-%table
-  %tr
-    %td
-      =image_tag "albums/9_miles.png", :class => 'album-cover'
-    %td.transparent-burgundy
-      %h2 music for the road
-    %td
-      =image_tag "albums/big_plans_no_money.png", :class => 'album-cover'
-    %td.transparent-brown
-      %h2 the musician's dream
-  %tr
-    %td.transparent-blue
-      %h2 rock 'n roll music with romance
-    %td
-      =image_tag "albums/rockaway_moon.png", :class => 'album-cover'
-    %td.transparent-teal
-      %h2 musical colors that create
-    %td
-      =image_tag "albums/shades.png", :class => 'album-cover'
+.container
+  %table
+    %tr
+      %td
+        =image_tag "albums/9_miles.png", :class => 'album-cover'
+      %td
+        =link_to((image_tag "albums/big_plans_no_money.png", :class => 'album-cover'), "https://www.cdbaby.com/cd/agentmooney2")
+      %td
+        =link_to((image_tag "albums/rockaway_moon.png", :class => 'album-cover'), "http://www.cdbaby.com/Artist/AgentMooney")
+      %td
+        =link_to((image_tag "albums/shades.png", :class => 'album-cover'), "https://www.cdbaby.com/cd/agentmooney")
+    %tr
+      %td.transparent-burgundy
+        %h2 music<br>for the<br>road
+      %td.transparent-brown
+        %h2 the musician's dream
+      %td.transparent-blue
+        %h2 rock 'n roll music with romance
+      %td.transparent-teal
+        %h2 musical colors that create

@@ -3,6 +3,7 @@ AgentMooney::Application.routes.draw do
 
   get "send_email" => 'pages#send_email'
 
+  get "bio" => 'pages#bio', :as => :bio
   get "music" => 'pages#music', :as => :music
   get "shows" => 'pages#shows', :as => :shows
   get "news" => 'pages#news', :as => :news

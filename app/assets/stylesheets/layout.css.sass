@@ -10,15 +10,29 @@ $sanchez: "Sanchez", sans-serif
 $center: 0 auto
 $border: solid 5px $black
 
-body
-  background: url('background_bridge_grayscale.png') no-repeat
+body:after
+  background: url('background_trees.jpg')
   background-size: cover
+  content: ""
+  bottom: 0
+  left: 0
+  right: 0
+  top: 0
+  opacity: 0.7
+  position: absolute
+  z-index: -1
 
 .container
   background: rgba(104, 0, 0, .8)
-  border-radius: 8px
   margin: $center
-  width: 1280px
+  padding: 1%
+  width: 100%
+
+.container2
+  background: rgba(255, 255, 255, .8)
+  margin: 0 auto 10px auto
+  padding: 5%
+  width: 70%
 
 .container:before, .container:after
   content: ""
@@ -28,8 +42,9 @@ body
   clear: both
 
 table
+  border: solid 2px $black
   margin: 0 auto
-  width: 1024px
+  width: 90%
 
 table td
   display: table-cell
@@ -37,6 +52,9 @@ table td
 
 td
   width: 25%
+
+.transparent-brown, .transparent-burgundy, .transparent-teal, .transparent-blue
+  padding: 1%
 
 .transparent-brown
   background: rgba(53, 27, 0, .8)
@@ -49,3 +67,20 @@ td
 
 .transparent-blue
   background: rgba(0, 52, 104, .8)
+
+.home-img, .main-album-img, nav, ul
+  width: 100%
+
+.home-img, .main-album-img
+  margin: 0
+
+.home-img
+  margin: 0 20px 0 0
+
+.img-div
+  width: 40%
+
+.album
+  float: left
+  margin: 1% 2% 1% 0
+  width: 25%

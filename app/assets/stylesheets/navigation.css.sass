@@ -2,24 +2,28 @@ $white: #fff
 $skyblue: #1874cd
 $burgundy: #680000
 $gray: #333
-$border: solid 1px $skyblue
+$orange: #f26919
+$border: solid 2px
 $oxygen500: 500 1em "Oxygen", sans-serif
 $oxygen700: 700 1.25em "Oxygen", sans-serif
 $sanchez: "Sanchez", sans-serif
 $center: 0 auto
 
-.logo-container
-  margin: $center
-  width: 25%
+@mixin fade-in
+  -webkit-transition: color .3s linear
+  -moz-transition: color .3s linear
+  -ms-transition: color .3s linear
+  -o-transition: color .3s linear
+  transition: color .3s linear
 
-.logo-container:before, .logo-container:after
-  content: ""
-  display: table
-
-.logo-container:after
-  clear: both
+.logo-wrapper
+  background: none
+  margin: 0 0 2% 0
 
 .logo
+  float: right
+  margin: 2% 10% 0 0
+  width: 225px
 
 .album-cover
   width: 100%
@@ -30,3 +34,70 @@ $center: 0 auto
   background: $burgundy
   float: left
   width: 25%
+
+.social-links
+  background: $burgundy
+  border-radius: 0 0 5px 5px
+  color: $white
+  float: right
+  margin: 0 20px
+  padding: 5px
+
+.social-img
+  width: 25px
+
+  a.img-link:hover
+  background: none
+
+nav, footer
+  background: $burgundy
+  margin: 0 auto
+  // padding: 5px 0
+
+nav
+  height: 40px
+
+footer
+  bottom: 0
+  height: 30px
+  left: 0
+  margin: 5% 0 0 0
+  position: fixed
+  width: 100%
+
+ul, li
+  padding: 5px
+
+ul
+  float: right
+  height: 25px
+
+@media all and(min-width: 600px)
+  ul
+    width: 50%
+
+nav:before, nav:after, ul:before, ul:after, .logo-wrapper:before, .logo-wrapper:after
+  content: ""
+  display: table
+
+nav:after, ul:after, .logo-wrapper:after
+  clear: both
+
+li
+  background: $burgundy
+  float: left
+  font-size: 1em
+  list-style: none
+  margin: 0
+  a
+    color: $white
+    font: $oxygen500
+    padding: 5px 10px
+    text-decoration: none
+    // text-transform: uppercase
+    &:hover
+      border-bottom: $border $orange
+      border-top: $border $orange
+      color: $orange
+      padding: 10px
+      @include fade-in
