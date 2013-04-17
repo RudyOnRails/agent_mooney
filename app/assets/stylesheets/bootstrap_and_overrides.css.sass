@@ -1,0 +1,50 @@
+@import bootstrap
+
+$border-radius: 10px
+$darkblue: #022754
+$white: #fff
+$oxygen500: 500 1em "Oxygen", sans-serif
+$oxygen700: 700 1.25em "Oxygen", sans-serif
+$sanchez: "Sanchez", sans-serif
+
+.carousel
+  background: $darkblue
+  border: 10px solid lighten($darkblue, 70%)
+  border-radius: $border-radius
+  margin: 0 auto 100px auto
+  padding: 10px
+  width: 70%
+  //height: 500px
+  img
+    display: block
+    height: 100%
+    float: right
+
+.carousel:before, .carousel:after
+  content: ""
+  display: table
+
+.carousel:after
+  clear: both
+
+.carousel-inner
+  // background: red
+  height: 450px
+  margin: 4% auto
+  padding: 0
+  width: 87%
+
+.caption
+  color: $white
+  float: left
+  font: $oxygen500
+  padding: 3%
+  width: 40%
+
+body.starry
+  background: url('night-sky.jpg')
+  background-size: cover
+
+body.trees
+  background: url('background_trees.jpg')
+  background-size: cover

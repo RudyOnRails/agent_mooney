@@ -1,20 +1,46 @@
-.container
-  %table
-    %tr
-      %td
-        =image_tag "albums/9_miles.png", :class => 'album-cover'
-      %td
-        =link_to((image_tag "albums/big_plans_no_money.png", :class => 'album-cover'), "https://www.cdbaby.com/cd/agentmooney2")
-      %td
-        =link_to((image_tag "albums/rockaway_moon.png", :class => 'album-cover'), "http://www.cdbaby.com/Artist/AgentMooney")
-      %td
-        =link_to((image_tag "albums/shades.png", :class => 'album-cover'), "https://www.cdbaby.com/cd/agentmooney")
-    %tr
-      %td.transparent-burgundy
-        %h2 music<br>for the<br>road
-      %td.transparent-brown
-        %h2 the musician's dream
-      %td.transparent-blue
-        %h2 rock 'n roll music with romance
-      %td.transparent-teal
-        %h2 musical colors that create
+#myCarousel.carousel.slide
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+    %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+    %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+    %li{"data-slide-to" => "3", "data-target" => "#myCarousel"}
+    %li{"data-slide-to" => "4", "data-target" => "#myCarousel"}
+  / Carousel items
+  .carousel-inner
+    .active.item
+      %a
+        %img{ :src => "assets/albums/9_miles.png", :class => "carousel-img", :alt => "Gather Rich Content" }
+      .caption
+        %h3 9 Miles of Good Road
+        %p music for the road 
+    .item
+      %a
+        %img{ :src => "assets/albums/big_plans_no_money.png", :alt => "Gather Rich Content" }
+    .item
+      %a
+        %img{ :src => "assets/albums/rockaway_moon.png", :alt => "Gather Rich Content" }
+    .item
+      %a
+        %img{ :src => "assets/albums/shades.png", :alt => "Gather Rich Content" }
+    .item
+      %a
+        %img{ :src => "assets/albums/rockaway_moon_2.png", :alt => "Gather Rich Content" }
+  / Carousel nav
+  %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+  %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+
+
+
+/ #myCarousel.carousel.slide
+/ / Carousel items
+/ .carousel-inner
+/   .active.item
+/     %a
+/       %img{ :src => "assets/albums/9_miles.png", :alt => "Gather Rich Content" }
+/   .item
+/     %a
+/       %img{ :src => "assets/albums/big_plans_no_money.png", :alt => "Gather Rich Content" }
+
+/ / Carousel nav
+/ %a.left.carousel-control{ :href => "#myCarousel", :"data-slide" => "prev" } &lsaquo;
+/ %a.right.carousel-control{ :href => "#myCarousel", :"data-slide" => "next" } &rsaquo;
