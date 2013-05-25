@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
   def home
-    render :layout => "starry_night"
   end
 
   def music
