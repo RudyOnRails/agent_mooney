@@ -8,15 +8,15 @@
   / Carousel items
   .carousel-inner
     .active.item
-      
-      %a
-        %img{ :src => "assets/albums/9_miles_472x472.png", :class => "carousel-img"}
+      =image_tag("albums/9_miles_472x472.png")
       .caption
         %h3 9 Miles of Good Road
-        %p music for the road 
+        %p music for the road
     .item
-      %a
-        %img{ :src => "assets/albums/big_plans_no_money.png", :alt => "Gather Rich Content" }
+      =image_tag("albums/big_plans_no_money.png")
+      .caption
+        %h3 Big Plans No Money
+        %p 
     .item
       %a
         %img{ :src => "assets/albums/rockaway_moon.png", :alt => "Gather Rich Content" }
