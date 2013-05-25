@@ -12,9 +12,6 @@ class PagesController < ApplicationController
   def news
   end
 
-  def faq
-  end
-
   def contact
   end
 
