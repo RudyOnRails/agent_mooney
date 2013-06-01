@@ -7,6 +7,7 @@
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     = favicon_link_tag 'favicon.ico'
   %body.starry
     %header
@@ -23,7 +24,7 @@
         =link_to((image_tag "facebook.png", :class => 'social-img'), '#', :class => 'img-link')
       .logo-wrapper
         =link_to((image_tag "logo_burgundy_transparent_25percent.gif", :class => 'logo'), root_path)
-
+    
       = yield
 
     %footer

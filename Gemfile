@@ -10,6 +10,8 @@ gem 'thin'
 group :development do
   gem 'sqlite3'
   gem 'quiet_assets'
+  gem 'rack-livereload'
+  gem 'guard-livereload'
 end
 
 gem 'pg', :group => :production
