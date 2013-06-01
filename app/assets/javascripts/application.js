@@ -15,6 +15,8 @@
 //= require_tree .
 //= require bootstrap
 
-$('#mycarousel').carousel({
-  interval: 2000
-})
+$(document).ready(function() {
+  $('.carousel').carousel({
+    interval: 6000
+  })
+});
