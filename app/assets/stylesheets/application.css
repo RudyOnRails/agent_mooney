@@ -17,3 +17,23 @@
 
  *
  */
+
+.squeeze_marketing {
+  background-color: red;
+  float: left;
+  width: 50%;
+}
+
+.social-links-container {
+  width: 100%;
+  height: auto;
+}
+
+.social-links-container:before, .social-links-container:after {
+  content: "";
+  display: table;
+}
+
+.social-links-container:after {
+  clear:both;
+}
