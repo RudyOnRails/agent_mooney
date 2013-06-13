@@ -19,9 +19,14 @@
  */
 
 .squeeze_marketing {
-  background-color: red;
-  float: left;
-  width: 50%;
+  background: rgba(255, 255, 255, 0.8);
+/*  background-color: white;
+*/  float: left;
+  width: 64%;
+  padding: 1%;
+  margin-left: 10%;
+  border-radius: 5px;
+  font-size: .8em;
 }
 
 .social-links-container {
