@@ -21,8 +21,8 @@
           %li=link_to "Contact", contact_path
       .social-links-container
         .social-links
-          =link_to((image_tag "twitter.png", :class => 'social-img'), '#', :class => 'img-link')
-          =link_to((image_tag "facebook.png", :class => 'social-img'), '#', :class => 'img-link')
+          =link_to((image_tag "twitter.png", :class => 'social-img'), 'http://twitter.com/AgentMooney', :target => "blank", :class => 'img-link')
+          =link_to((image_tag "facebook.png", :class => 'social-img'), 'https://www.facebook.com/pages/Agent-Mooney/100153080028796', :target => "blank", :class => 'img-link')
       .logo-wrapper
         .squeeze_marketing
           =render "squeeze"
