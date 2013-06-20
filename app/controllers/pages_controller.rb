@@ -19,4 +19,10 @@ class PagesController < ApplicationController
     redirect_to :back, notice: "Thank you for your message!"
   end
 
+  def sign_up
+    @sign_up = SignUp.create(params[:sign_up])
+    SignUpMailer.sign_up_for_mp3(@sign_up.id).deliver
+    redirect_to :back, notice: "Your free mp3 is on it's way!"
+  end
+
 end

@@ -18,6 +18,8 @@
  *
  */
 
+@import url(http://fonts.googleapis.com/css?family=Cedarville+Cursive);
+
 .squeeze_marketing {
   background: rgba(255, 255, 255, 0.8);
 /*  background-color: white;
@@ -27,6 +29,7 @@
   margin-left: 10%;
   border-radius: 5px;
   font-size: 1em;
+  font
 }
 
 .social-links-container {
@@ -42,3 +45,4 @@
 .social-links-container:after {
   clear:both;
 }
+

@@ -12,6 +12,9 @@ group :development do
   gem 'quiet_assets'
   gem 'rack-livereload'
   gem 'guard-livereload'
+  gem "letter_opener"
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 gem 'pg', :group => :production

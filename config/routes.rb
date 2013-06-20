@@ -9,4 +9,6 @@ AgentMooney::Application.routes.draw do
   get "news" => 'pages#news', :as => :news
   get "faq" => 'pages#faq', :as => :faq
   get "contact" => 'pages#contact', :as => :contact
+
+  post 'sign_ups' => 'pages#sign_up'
 end

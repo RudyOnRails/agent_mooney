@@ -1,7 +1,13 @@
 .span5
-  Welcome to the “Agent” Mooney site & thanks for checking out my music!  Request your Free copy of my new single  “Crank It Up”. "Crank It Up"  is off the soon to be released  “Rockaway Moon 2.”  The magic touch of legendary saxophonist Jim Horn will have you rocking down the highway to this Agent Mooney's 5th CD. Rockaway Moon 2 has unique and interesting performances from best musicians from the music/windy cities. Recorded in Chicago and Nashville this CD was a labor of love. 
+  Welcome to the “Agent” Mooney site & thanks for checking out my music!  Enter your information in below for a free download of “Crank It Up”. "Crank It Up" is off the soon to be released “Rockaway Moon 2.”  The magic touch of legendary saxophonist Jim Horn will have you rocking down the highway to our 5th CD. Rockaway Moon 2 has unique and 
 .span5
-  It's gonna  leave a smile on your face.  So jump on this free limited time offer. Enter your name and email below and I’ll send you the free track right away. The free track download will not last forever. Download now before the free track offer is gone.                                                      
+  interesting performances from best musicians from the music/windy cities. Recorded in Chicago and Nashville this CD was a labor of love. It's gonna  leave a smile on your face.  So jump on this free limited time offer. Download now before the free track offer is gone.
   %p
     Sincerely,
-  Kevin “Agent” Mooney 
+    Kevin “Agent” Mooney 
+=form_for SignUp.new do |f|
+  =f.text_field :first_name, :placeholder => "First Name"
+  =f.text_field :last_name, :placeholder => "Last Name"
+  =f.text_field :email_address, :placeholder => "Email Address"
+
+  =f.submit "Send Me My Free mp3!", :class => 'btn btn-large btn-custom'
