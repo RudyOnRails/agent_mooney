@@ -4,7 +4,8 @@ class SignUpMailer < ActionMailer::Base
 
   def sign_up_for_mp3(sign_up_id)
     @sign_up = SignUp.find(sign_up_id)
-    mail( to: @sign_up.email_address, subject: 'Here\'s Your Free AgentMooney mp3!')
+    agent_mooney = "k_mooney@hotmail.com"
+    mail( to: [@sign_up.email_address, agent_mooney], subject: 'Here\'s Your Free AgentMooney mp3!')
 
   end
 end
