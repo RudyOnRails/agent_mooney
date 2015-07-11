@@ -7,9 +7,18 @@
         %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
         %li{"data-slide-to" => "3", "data-target" => "#myCarousel"}
         %li{"data-slide-to" => "4", "data-target" => "#myCarousel"}
+        %li{"data-slide-to" => "5", "data-target" => "#myCarousel"}
       / Carousel items
       .carousel-inner
         .active.item
+          =image_tag("albums/for_real_album_cover.JPG")
+          .caption
+            %h3 For Reel
+            %p
+              Reel to reel warmth with virtuoso musical performances makes for a great listening experience!
+              .div{:style => "width:170px; height:40px; margin:0; padding:0; border:0; background-image:url(http://www.cdbaby.com/Images/Links/linkmkr_btn7_buyalbum.png);"}
+                =link_to "", 'https://loudr.fm/release/for-reel/F2wD5', :style => "display:block; width:125px; height:40px; margin:0; border:0;", :target => "blank"
+        .item
           =image_tag("albums/9_miles_472x472.png")
           .caption
             %h3 9 Miles of Good Road
