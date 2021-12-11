@@ -3,6 +3,7 @@ ruby '2.6.6'
 
 gem 'rails', '3.2.22.5'
 gem 'thin'
+gem 'activerecord-postgresql-adapter'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
